@@ -1,0 +1,19 @@
+Assignment 2: Linux
+credentials
+
+This file has been edited by the new user: kimutai.
+
+The user has permissions as well as the group he belongs to.
+
+
+the steps.
+        1. adduser kimutai
+        2. passwd kimutai to set password for the user
+        3. make directory and the file records in it.
+        4. ls -l to check permissions
+        5. chmod u+rw records.txt
+        6. id kimutai to check the group he belongs to
+        7. sudo chown :kimutai records.txt to enable the new user to take control of the file.
+        8. chmod g+rw records.txt to enable the group to have file permissions
+
+The  new user: kimutai who is in the group can now read and write the file.
