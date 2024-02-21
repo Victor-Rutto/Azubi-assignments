@@ -1,0 +1,24 @@
+cd Desktop
+mkdir Movies
+cd Movies
+mkdir movies series
+cd movies
+mkdir movie_1 movie_2
+cd ..
+cd series
+mkdir series_1 series_2 movie_3
+
+#Moving movie_3 to the movies Directory within the series Directory
+mv movie_3 movies/
+
+#Moving the movies directory in the series directory to the movies Directory
+mv ~/Desktop/movies/series/movies  ~/~/Desktop/movies/movies
+
+#Renaming the movies in the movies Directory
+cd ..
+cd movies
+mv movies movie_4
+
+#Deleting a Directory
+rm -r movie_4
+
