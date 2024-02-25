@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Define backup directory
+backup_dir="/home/espionage/Desktop/backup-directory"
+
+# Backup function
+backup_data() {
+    cp password "$backup_dir/$(date +"%Y-%m-%d")_password"
+    echo "Backup completed successfully."
+}
+
+# Execute backup
+backup_data

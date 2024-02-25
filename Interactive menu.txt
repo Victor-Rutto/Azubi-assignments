@@ -1,0 +1,45 @@
+#!/bin/bash
+
+# Function to display main menu
+display_menu() {
+    clear
+    echo "Personal Record Management System"
+    echo "---------------------------------"
+    echo "1. Add New Record"
+    echo "2. Edit Existing Record"
+    echo "3. Search for Record"
+    echo "4. Generate Reports"
+    echo "5. Exit"
+}
+
+# Main menu loop
+while true; do
+    display_menu
+    read -p "Enter your choice: " choice
+    case $choice in
+        1) # Add New Record
+            # Implement functionality to add new record
+            echo "Option 1: Add New Record"
+            ;;
+        2) # Edit Existing Record
+            # Implement functionality to edit existing record
+            echo "Option 2: Edit Existing Record"
+            ;;
+        3) # Search for Record
+            # Implement functionality to search for specific record
+            echo "Option 3: Search for Record"
+            ;;
+        4) # Generate Reports
+            # Implement functionality to generate reports
+            echo "Option 4: Generate Reports"
+            ;;
+        5) # Exit
+            echo "Exiting program. Goodbye!"
+            exit
+            ;;
+        *) # Invalid choice
+            echo "Invalid choice. Please try again."
+            ;;
+    esac
+    read -p "Press Enter to continue..."
+done
