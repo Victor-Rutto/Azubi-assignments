@@ -1,0 +1,26 @@
+
+Scenario: You are a developer tasked with provisioning a basic web server
+ infrastructure on AWS using Terraform. This infrastructure will consist
+ of a single EC2 instance with a web server application pre-installed.
+
+Steps:
+Install Terraform:
+Set Up Your AWS Credentials:
+Create a Terraform Project To Create a t2.micro​ EC2 instance :
+Note : Ensure the AMI you are using and region match
+
+Take a working screenshot of the main.tf​ file for the above and the
+resulting ec2 instance​ in the management console
+
+Modify your Terraform script to include a security group​ that allows
+inbound HTTP​ traffic and take screenshots of the modification process
+ and security group rules
+
+Make your final modification of the script to install a web server
+i.e. apache2/nginx [note: they run on the same port] and show a working
+server page
+Create an output file that captures the following and capture the
+resulting output
+1.instance_id​
+2.private_ip​
+3.instance_name
